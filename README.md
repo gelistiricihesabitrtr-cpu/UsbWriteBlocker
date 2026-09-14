@@ -2,6 +2,8 @@
 
 Adli bilişim incelemeleri için Windows üzerinde yazılımsal USB write blocker. Etkinleştirildiğinde sisteme bağlı (takılı veya yeni takılacak) tüm USB kitle depolama aygıtlarını salt-okunur hale getirir; böylece incelenen delil diskine yanlışlıkla yazma, silme veya zaman damgası değişimi yapılmasını önler.
 
+![USB Write Blocker ekran görüntüsü](docs/screenshot.png)
+
 ## Nasıl çalışır
 
 Windows'un `HKLM\SYSTEM\CurrentControlSet\Control\StorageDevicePolicies\WriteProtect` DWORD değerini kullanır. Bu değer `1` olduğunda işletim sistemi tüm USB depolama aygıtlarına yazmayı reddeder. Program bu registry değerini yönetmek için bir arayüz sunar.
